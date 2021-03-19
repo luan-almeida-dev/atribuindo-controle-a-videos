@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Controles Video</title>
 </head>
+
 <body>
-    <h1> Helo Word</h1>
+
+    <div  class="container">
+        <video  id="video1" class="video" src="./midias/videos/Sony 4K Demo_ Another World.mp4" poster="./midias/imagens/paisagem4k.jpg"></video>
+
+        <div  onmouseover="fecharcontrole(this)" class="controle">
+            <img  onclick="play()" class="btn" src="./midias/imagens/play.svg">
+            <img  onclick="stop()" class="btn" src="./midias/imagens/stop1.svg">
+            <img  onclick="speed()" class="btn" src="./midias/imagens/more-speed.svg">
+            <img  onclick="avanced()" class="btn" src="./midias/imagens/forward5.svg">
+            <img  onclick="retorar()" class="btn" src="./midias/imagens/backwards5.svg">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>
